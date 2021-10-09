@@ -1,0 +1,38 @@
+#app {
+    .blog-main {
+        width: 90%;
+        margin: 50px auto;
+        h2 {
+            font-size: 60pt;
+            font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+        }
+        .blog-item {
+            display: flex;
+            margin-bottom: 50px;
+            img {
+                width: 400px;
+            }
+            .blog-text {
+                display: block;
+                padding-left: 20px;
+                position: relative;
+                p {
+                    max-width: 400px;
+                }
+                .blog-button {
+                    width: 150px;
+                    color: white;
+                    text-transform: uppercase;
+                    background-color: darkred;
+                    height: 50px;
+                    border-radius: 30px;
+                    text-align: center;
+                    padding-top: 15px;
+                    position: absolute;
+                    bottom: 0;
+                    
+                }
+            }
+        }
+    }
+}

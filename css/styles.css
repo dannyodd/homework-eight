@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightslategray;
+  padding-bottom: 100px;
+}
+
+nav {
+  height: 50px;
+  background-color: darkred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#app .welcome {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  padding-top: 40px;
+}
+#app .welcome h2 {
+  font-size: 60pt;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+#app .welcome p {
+  font-weight: bold;
+}
+#app .featured-recipes {
+  margin: 50px 2%;
+  text-align: center;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+#app .featured-recipes h2 {
+  font-size: 40pt;
+}
+#app .featured-recipes .feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#app .featured-recipes .feature-container .feature-item {
+  width: 400px;
+  height: 250px;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+#app .featured-recipes .feature-container .feature-item h3 {
+  color: white;
+  position: absolute;
+  top: 80px;
+  font-size: 30pt;
+}
+#app .featured-recipes .feature-container .feature-item img {
+  width: 400px;
+  opacity: 0.5;
+}
+#app .blog-feed {
+  text-align: center;
+  margin: 50px 2%;
+}
+#app .blog-feed h2 {
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+  font-size: 40pt;
+}
+#app .blog-feed a {
+  text-transform: uppercase;
+  font-size: 12pt;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#app .blog-feed .blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#app .blog-feed .blog-container .blog-item {
+  width: 300px;
+}
+#app .blog-feed .blog-container .blog-item img {
+  width: inherit;
+}
+#app .kitchen-tools {
+  text-align: center;
+  margin: 50px auto;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+#app .kitchen-tools .get-app {
+  background-color: darkred;
+  color: white;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px 5%;
+  border-radius: 20px;
+}
+#app .kitchen-tools .get-app h2 {
+  font-size: 30pt;
+}
+#app .kitchen-tools .get-app p {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+#app .kitchen-tools h2 {
+  font-size: 40pt;
+}
+#app .kitchen-tools .tools-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 50px;
+}
+#app .kitchen-tools .tools-container .tool-item {
+  width: 300px;
+  height: 200px;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+#app .kitchen-tools .tools-container .tool-item h3 {
+  color: white;
+  font-size: 24pt;
+  position: absolute;
+}
+#app .kitchen-tools .tools-container .tool-item img {
+  width: 300px;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#app .blog-main {
+  width: 90%;
+  margin: 50px auto;
+}
+#app .blog-main h2 {
+  font-size: 60pt;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+#app .blog-main .blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+#app .blog-main .blog-item img {
+  width: 400px;
+}
+#app .blog-main .blog-item .blog-text {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+#app .blog-main .blog-item .blog-text p {
+  max-width: 400px;
+}
+#app .blog-main .blog-item .blog-text .blog-button {
+  width: 150px;
+  color: white;
+  text-transform: uppercase;
+  background-color: darkred;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+#hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/hero/home-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-color: aqua;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#hero h1 {
+  color: white;
+  font-size: 80pt;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.featured-recipes {
+  margin: 50px 2%;
+  text-align: center;
+  font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+.featured-recipes h2 {
+  font-size: 40pt;
+}
+.featured-recipes .feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.featured-recipes .feature-container .feature-item {
+  width: 400px;
+  height: 250px;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.featured-recipes .feature-container .feature-item h3 {
+  color: white;
+  position: absolute;
+  top: 80px;
+  font-size: 30pt;
+}
+.featured-recipes .feature-container .feature-item img {
+  width: 400px;
+  opacity: 0.5;
+}
+.featured-recipes .feature-container .feature-item-expl {
+  width: 400px;
+  height: 500px;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-img {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-img img {
+  width: 100%;
+  opacity: 0.5;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-img h3 {
+  position: absolute;
+  color: white;
+  margin-top: 50px;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-text {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-text ul {
+  list-style-type: "-";
+  padding-left: 10px;
+}
+.featured-recipes .feature-container .feature-item-expl .feature-item-expl-text .feature-item-expl-text-inner {
+  width: 50%;
+}
+
+footer {
+  background-color: darkred;
+  position: relative;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .sm-icons {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+footer p {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  color: white;
+  font-weight: bold;
+}

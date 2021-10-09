@@ -1,0 +1,90 @@
+#hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(../images/hero/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-color:aqua;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+        font-size: 80pt;
+        font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    }
+}
+
+.featured-recipes {
+    margin: 50px 2%;
+    text-align: center;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    h2 {
+        font-size: 40pt;
+    }
+    .feature-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .feature-item {
+            width: 400px;
+            height: 250px;
+            background: black;
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 20px;
+            h3 {
+                color: white;
+                position: absolute;
+                top: 80px;
+                font-size: 30pt;
+            }
+            img {
+                width: 400px;
+                opacity: 0.5;
+            }
+
+        }
+
+        .feature-item-expl {
+            width: 400px;
+            height: 500px;
+            
+            .feature-item-expl-img {
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                background: black;
+                img {
+                    width: 100%;
+                    opacity: 0.5;
+                }
+                h3 {
+                    position: absolute;
+                    color: white;
+                    margin-top: 50px;
+                }
+            }
+            .feature-item-expl-text {
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                background: white;
+                ul {
+                    list-style-type: '-';
+                    padding-left: 10px;
+                }
+                .feature-item-expl-text-inner {
+                    width: 50%;
+                }
+
+            }
+        }
+    }
+
+}
